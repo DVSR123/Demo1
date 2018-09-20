@@ -1,0 +1,10 @@
+{
+    "WebUser": {
+        "userId": "harish.matcha@primasolv.com",
+        "firstName": "Harish",
+        "lastName": "Matcha"
+    },
+	"usetType":"admin",
+	"oktaSites": ["FCAwiTECH","PS","PSTEST"],
+    "ignoreAdmins": ["rajesh@primasolv.com", "ajith@primasolv.com","pani@primasolv.com"]
+}

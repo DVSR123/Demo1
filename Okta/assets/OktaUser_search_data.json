@@ -1,0 +1,154 @@
+{
+	"oktaUser": {
+		"emailId": "rajesh@primasolv.com",
+		"dealerCode": "99970",
+		"firstName": "Rajesh",
+		"lastName": "Inampudi",
+		"status": "ACTIVE",
+		"statusIcon":"Black",
+		"second_email": "rinampudi@primasolv.com",
+		"mfa1": "GOOGLE",
+		"mfa2": "OKTA",
+		"mfa3": "YUBICO",
+		"userCreatedTS": "2015-11-09T23:03:21.000Z",
+		"lastUpdated": "2018-08-13T15:27:39.000Z",
+		"lastLogin": "2018-06-26T13:07:04.000Z"
+	},
+	"siteId": "50",
+	"userEmail": "rajesh@primasolv.com",
+	"accountInfoAsOf": "2018-08-13T15:27:39.000Z",
+		
+	"groups": ["500_TEST_DMD", "500_TEST_DMA","Everyone"],
+	"apps": ["DMAdmin_LATAM_PROD", "DMDevel_LATAM_PROD"],
+	"events": [{
+			"logCreatedTS": "2018-08-13 11:28:04.723",
+			"actorType":"ADMIN",
+			"actorEmail": "rajesh@primasolv.com",
+			"eventName": "Reset factor for user",
+			"eventType": "user.mfa.factor.deactivate",
+			"eventStatus": "SUCCESS",
+			"eventStatusReason": "User reset SOFT_TOKEN factor",
+			"requestUrl": "/api/v1/users/00u15jygnnoh4EOsg0h8/factors/uft1egva3r3TH3HDS0h8",
+			"eventTargets": [{
+					"targetType": "USER",
+					"targetDesc": "Mike Isaac (mike.isaac@fcagroup.com)"
+				}
+			]
+		}, {
+			"logCreatedTS": "2018-08-13 11:27:54.855",
+			"actorType":"USER",
+			"actorEmail": "rajesh@primasolv.com",
+			"eventName": "User accessing Okta admin app",
+			"eventType": "user.session.access_admin_app",
+			"eventStatus": "SUCCESS",
+			"requestUrl": "/admin/sso/request",
+			"eventTargets": [{
+					"targetType": "APP",
+					"targetDesc": "App Name"			
+				}
+			]
+		}, {
+			"logCreatedTS": "2018-08-13 11:27:49.443",
+			"actorType":"ADMIN",
+			"actorEmail": "rajesh@primasolv.com",
+			"eventName": "Authentication of user via MFA",
+			"eventType": "user.authentication.auth_via_mfa",
+			"eventStatus": "SUCCESS",
+			"requestUrl": "/api/v1/authn/factors/uft1eoabbtjp1yBoq0h8/verify",
+			"eventTargets": [{
+					"targetType": "GROUP",
+					"targetDesc": "Group Name"
+					}
+			]
+		}, {
+			"logCreatedTS": "2018-08-13 11:27:49.432",
+			"actorType":"SYSTEM",
+			"actorEmail": "rajesh@primasolv.com",
+			"eventName": "Evaluation of sign-on policy",
+			"eventType": "policy.evaluate_sign_on",
+			"eventStatus": "CHALLENGE",
+			"eventStatusReason": "Sign-on policy evaluation resulted in CHALLENGE",
+			"requestUrl": "/api/v1/authn/factors/uft1eoabbtjp1yBoq0h8/verify",
+			"eventTargets": [{
+					"targetType": "SYSTEM",
+					"targetDesc": "Legacy Policy"
+				}
+			]
+		},
+		{
+			"logCreatedTS": "2018-08-13 11:27:49.432",
+			"actorType":"SYSTEM",
+			"actorEmail": "rajesh@primasolv.com",
+			"eventName": "Evaluation of sign-on policy",
+			"eventType": "policy.evaluate_sign_on",
+			"eventStatus": "CHALLENGE",
+			"eventStatusReason": "Sign-on policy evaluation resulted in CHALLENGE",
+			"requestUrl": "/api/v1/authn/factors/uft1eoabbtjp1yBoq0h8/verify",
+			"eventTargets": [{
+					"targetType": "SYSTEM",
+					"targetDesc": "Legacy Policy"
+				}
+			]
+		},
+		{
+			"logCreatedTS": "2018-08-13 11:27:49.432",
+			"actorType":"SYSTEM",
+			"actorEmail": "rajesh@primasolv.com",
+			"eventName": "Evaluation of sign-on policy",
+			"eventType": "policy.evaluate_sign_on",
+			"eventStatus": "CHALLENGE",
+			"eventStatusReason": "Sign-on policy evaluation resulted in CHALLENGE",
+			"requestUrl": "/api/v1/authn/factors/uft1eoabbtjp1yBoq0h8/verify",
+			"eventTargets": [{
+					"targetType": "SYSTEM",
+					"targetDesc": "Legacy Policy"
+				}
+			]
+		},
+		{
+			"logCreatedTS": "2018-08-13 11:27:49.432",
+			"actorType":"SYSTEM",
+			"actorEmail": "rajesh@primasolv.com",
+			"eventName": "Evaluation of sign-on policy",
+			"eventType": "policy.evaluate_sign_on",
+			"eventStatus": "CHALLENGE",
+			"eventStatusReason": "Sign-on policy evaluation resulted in CHALLENGE",
+			"requestUrl": "/api/v1/authn/factors/uft1eoabbtjp1yBoq0h8/verify",
+			"eventTargets": [
+				{
+					"targetType": "APP",
+					"targetDesc": "APP NAME"
+				},
+				{
+					"targetType": "SYSTEM",
+					"targetDesc": "Legacy Policy,Legacy Policy 2"
+				}
+			]
+		}
+	],
+	"suggested_actions": {
+		"10":"Resend Account activation email",
+		"20":"Unlock Account",
+		"21":"Unlock Account & Reset Password",
+		"22":"Reset Password",
+		"25":"Reset Security Question/Answer",
+		"30":"Reset ALL MFAs",
+		"31":"Reset Google Authenticator MFA",
+		"32":"Reset Okta Verify MFA",
+		"33":"Reset Yubi Key MFA",
+		"50":"Setup Yubi Key",
+
+		"90":"Account Status: Locked Out",
+		"90":"Account Status: Suspended",
+		"90":"Account Status: Active",
+		"90":"Account Status: Password Reset",
+		"90":"Account Status: Password Expired",
+		"90":"Account Status: Pending Activation",
+		"90":"Account Status: Deactivated",
+		
+		"91":"No MFAs (Provide KB link to help on setting up MFA)",		
+		"92":"Show NO APP icon",
+
+		"00":"No actions are required"
+	}
+}
